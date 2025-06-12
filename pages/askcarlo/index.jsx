@@ -96,7 +96,7 @@ export default function AskCarlo() {
       <main className="min-h-screen bg-[#fdfaf6] text-[#222] px-4 py-10 font-[Outfit] antialiased tracking-tight flex justify-center">
         <div className="w-full max-w-2xl bg-white shadow-xl rounded-3xl px-6 py-8 border border-[#f2e6df] ring-2 ring-pink-100 ring-offset-2 ring-offset-[#fdfaf6]">
           <h1 className="text-4xl font-bold text-center text-[#3c3c3c] mb-2 animate-fade-in">
-            Meet Velvet
+            Meet Carlo
           </h1>
           <p className="text-center text-[#7a7a7a] italic mb-6 text-lg">
             ✨ Carpets and Flooring Expert consultations, the Carlo way.
