@@ -133,7 +133,7 @@ export default function AskCarlo() {
   <div className="flex items-start gap-2 justify-start">
     <VelvetAvatar />
     <div className="p-5 rounded-3xl max-w-[75%] sm:max-w-[85%] text-[15px] leading-relaxed shadow-md border border-[#e5dfd2] bg-[#faf9f6] backdrop-blur-sm shadow-[0_0_15px_rgba(255,192,203,0.15)] text-left">
-      <strong className="block mb-1 text-sm text-[#555] font-medium">Velvet:</strong>
+      <strong className="block mb-1 text-sm text-[#555] font-medium">Carlo:</strong>
       <span>
         {displayedAnswer}
         <span className="inline-block w-[1px] h-5 bg-[#555] animate-pulse ml-0.5 align-middle"></span>
@@ -147,7 +147,7 @@ export default function AskCarlo() {
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-100" />
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-200" />
-                <span className="ml-2">Velvet is thinking…</span>
+                <span className="ml-2">Carlo is thinking…</span>
               </div>
             )}
           </div>
@@ -156,7 +156,7 @@ export default function AskCarlo() {
   <textarea
     rows="2"
     className="w-full border border-[#ddd8d2] rounded-xl p-3 focus:outline-none focus:ring focus:border-[#c7bfae]"
-    placeholder="Ask something like: 'What’s the best blackout curtain for a bedroom window?'"
+    placeholder="Ask something like: 'What’s the best flooring for modern living room?'"
     value={question}
     onChange={(e) => setQuestion(e.target.value)}
   ></textarea>
