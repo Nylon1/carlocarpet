@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
-export default function AskVelvet() {
+export default function AskCarlo() {
   const [question, setQuestion] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ export default function AskVelvet() {
     setShowBar(true);
 
     try {
-      const res = await fetch('/api/askvelvet', {
+      const res = await fetch('/api/askCarlo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMessages })
@@ -84,8 +84,8 @@ export default function AskVelvet() {
   return (
     <>
       <Head>
-        <title>Velvet – Curtain Advisor</title>
-        <meta name="description" content="Ask Velvet your elegant AI curtain expert" />
+        <title>Carlo – Carpets and Flooring Advisor</title>
+        <meta name="description" content="Ask Carlo your Smart Carpets and Flooring Advisor /" />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&display=swap"
@@ -99,7 +99,7 @@ export default function AskVelvet() {
             Meet Velvet
           </h1>
           <p className="text-center text-[#7a7a7a] italic mb-6 text-lg">
-            ✨ Curtain consultations, the Velvet way.
+            ✨ Carpets and Flooring Advisor, the Carlo way.
           </p>
 
           {showBar && (
@@ -114,7 +114,7 @@ export default function AskVelvet() {
                 key={i}
                 className={`flex items-start gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                {msg.role === 'assistant' && <VelvetAvatar />}
+                {msg.role === 'assistant' && <CarloAvatar />}
                 <div
                   className={`p-5 rounded-3xl max-w-[75%] sm:max-w-[85%] text-[15px] leading-relaxed shadow-md transition ${
                     msg.role === 'user' ? 'bg-[#eae7e0] text-left ml-auto'
@@ -122,7 +122,7 @@ export default function AskVelvet() {
                   }`}
                 >
                   <strong className="block mb-1 text-sm text-[#555] font-medium">
-                    {msg.role === 'user' ? 'You' : 'Velvet'}:
+                    {msg.role === 'user' ? 'You' : 'Carlo'}:
                   </strong>
                   <div>{msg.content}</div>
                 </div>
@@ -166,10 +166,10 @@ export default function AskVelvet() {
   className="w-full bg-[#222] py-2.5 rounded-xl hover:bg-[#444] transition-all font-medium tracking-wide shadow-md hover:shadow-lg"
   disabled={loading}
 >
-  {loading ? 'Thinking…' : 'Ask Velvet'}
+  {loading ? 'Thinking…' : 'Ask Carlo'}
 </button>
   <a
-    href="https://www.curtainsuk.com/pages/book-your-home-visit"
+    href="http://bookmycarpet.co.uk/contact/"
     target="_blank"
     rel="noopener noreferrer"
     className="w-full bg-pink-500 text-white py-2.5 rounded-xl hover:bg-pink-600 transition-all font-medium tracking-wide shadow-md hover:shadow-lg text-center"
