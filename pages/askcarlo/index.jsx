@@ -85,7 +85,7 @@ export default function AskCarlo() {
     <>
       <Head>
         <title>Carlo – Carpets and Flooring Expert </title>
-        <meta name="description" content="Ask Carlo, Carpets and Flooring Expert expert" />
+        <meta name="description" content="Ask Carlo, Carpets and Flooring Expert" />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&display=swap"
