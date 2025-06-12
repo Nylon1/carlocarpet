@@ -156,7 +156,7 @@ export default function AskCarlo() {
   <textarea
     rows="2"
     className="w-full border border-[#ddd8d2] rounded-xl p-3 focus:outline-none focus:ring focus:border-[#c7bfae]"
-    placeholder="Ask something like: 'What’s the best Flooring for a bedroom window?'"
+    placeholder="Ask something like: 'What’s the best Flooring for a bedroom?'"
     value={question}
     onChange={(e) => setQuestion(e.target.value)}
   ></textarea>
