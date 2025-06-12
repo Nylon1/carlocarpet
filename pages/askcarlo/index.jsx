@@ -99,7 +99,7 @@ export default function AskCarlo() {
             Meet Velvet
           </h1>
           <p className="text-center text-[#7a7a7a] italic mb-6 text-lg">
-            ✨ Carpets and Flooring Expert consultations, the Velvet way.
+            ✨ Carpets and Flooring Expert consultations, the Carlo way.
           </p>
 
           {showBar && (
