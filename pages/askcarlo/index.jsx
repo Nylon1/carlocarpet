@@ -122,7 +122,7 @@ export default function AskCarlo() {
                   }`}
                 >
                   <strong className="block mb-1 text-sm text-[#555] font-medium">
-                    {msg.role === 'user' ? 'You' : 'Velvet'}:
+                    {msg.role === 'user' ? 'You' : 'Carlo'}:
                   </strong>
                   <div>{msg.content}</div>
                 </div>
@@ -147,7 +147,7 @@ export default function AskCarlo() {
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-100" />
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce delay-200" />
-                <span className="ml-2">Velvet is thinking…</span>
+                <span className="ml-2">Carlo is thinking…</span>
               </div>
             )}
           </div>
@@ -166,7 +166,7 @@ export default function AskCarlo() {
   className="w-full bg-[#222] py-2.5 rounded-xl hover:bg-[#444] transition-all font-medium tracking-wide shadow-md hover:shadow-lg"
   disabled={loading}
 >
-  {loading ? 'Thinking…' : 'Ask Velvet'}
+  {loading ? 'Thinking…' : 'Ask carlo'}
 </button>
   <a
     href="http://bookmycarpet.co.uk/contact/"
