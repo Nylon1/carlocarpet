@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      router.replace('/askvelvet');
+      router.replace('/askcarlo');
     }, 1500);
     return () => clearTimeout(timeout);
   }, [router]);
