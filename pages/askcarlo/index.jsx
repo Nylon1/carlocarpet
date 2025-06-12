@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 
-export default function AskVelvet() {
+export default function AskCarlo() {
   const [question, setQuestion] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ export default function AskVelvet() {
     setShowBar(true);
 
     try {
-      const res = await fetch('/api/askvelvet', {
+      const res = await fetch('/api/askcarlo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMessages })
@@ -71,7 +71,7 @@ export default function AskVelvet() {
     setShowBar(false);
   };
 
-  const VelvetAvatar = () => (
+  const CarloAvatar = () => (
     <div className="relative w-10 h-10 flex-shrink-0 drop-shadow-md">
       <div className="absolute -inset-1 rounded-full border-2 border-pink-300 animate-ping opacity-20 z-0" />
       <div className="absolute inset-0 rounded-full bg-pink-400 opacity-40 blur-xl animate-pulse z-0"></div>
@@ -84,8 +84,8 @@ export default function AskVelvet() {
   return (
     <>
       <Head>
-        <title>Velvet – Curtain Advisor</title>
-        <meta name="description" content="Ask Velvet your elegant AI curtain expert" />
+        <title>Carlo – Carpets and Flooring Expert </title>
+        <meta name="description" content="Ask Carlo, Carpets and Flooring Expert expert" />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&display=swap"
@@ -99,7 +99,7 @@ export default function AskVelvet() {
             Meet Velvet
           </h1>
           <p className="text-center text-[#7a7a7a] italic mb-6 text-lg">
-            ✨ Curtain consultations, the Velvet way.
+            ✨ Carpets and Flooring Expert consultations, the Velvet way.
           </p>
 
           {showBar && (
@@ -114,7 +114,7 @@ export default function AskVelvet() {
                 key={i}
                 className={`flex items-start gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                {msg.role === 'assistant' && <VelvetAvatar />}
+                {msg.role === 'assistant' && <CarlotAvatar />}
                 <div
                   className={`p-5 rounded-3xl max-w-[75%] sm:max-w-[85%] text-[15px] leading-relaxed shadow-md transition ${
                     msg.role === 'user' ? 'bg-[#eae7e0] text-left ml-auto'
@@ -156,7 +156,7 @@ export default function AskVelvet() {
   <textarea
     rows="2"
     className="w-full border border-[#ddd8d2] rounded-xl p-3 focus:outline-none focus:ring focus:border-[#c7bfae]"
-    placeholder="Ask something like: 'What’s the best blackout curtain for a bedroom window?'"
+    placeholder="Ask something like: 'What’s the best Flooring for a bedroom window?'"
     value={question}
     onChange={(e) => setQuestion(e.target.value)}
   ></textarea>
@@ -169,7 +169,7 @@ export default function AskVelvet() {
   {loading ? 'Thinking…' : 'Ask Velvet'}
 </button>
   <a
-    href="https://www.curtainsuk.com/pages/book-your-home-visit"
+    href="http://bookmycarpet.co.uk/contact/"
     target="_blank"
     rel="noopener noreferrer"
     className="w-full bg-pink-500 text-white py-2.5 rounded-xl hover:bg-pink-600 transition-all font-medium tracking-wide shadow-md hover:shadow-lg text-center"
