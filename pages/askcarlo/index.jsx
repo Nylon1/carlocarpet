@@ -131,7 +131,7 @@ export default function AskCarlo() {
 
             {pendingAnswer && (
   <div className="flex items-start gap-2 justify-start">
-    <VelvetAvatar />
+    <CarloAvatar />
     <div className="p-5 rounded-3xl max-w-[75%] sm:max-w-[85%] text-[15px] leading-relaxed shadow-md border border-[#e5dfd2] bg-[#faf9f6] backdrop-blur-sm shadow-[0_0_15px_rgba(255,192,203,0.15)] text-left">
       <strong className="block mb-1 text-sm text-[#555] font-medium">Velvet:</strong>
       <span>
