@@ -114,7 +114,7 @@ export default function AskCarlo() {
                 key={i}
                 className={`flex items-start gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                {msg.role === 'assistant' && <CarlotAvatar />}
+                {msg.role === 'assistant' && <CarloAvatar />}
                 <div
                   className={`p-5 rounded-3xl max-w-[75%] sm:max-w-[85%] text-[15px] leading-relaxed shadow-md transition ${
                     msg.role === 'user' ? 'bg-[#eae7e0] text-left ml-auto'
@@ -169,7 +169,7 @@ export default function AskCarlo() {
   {loading ? 'Thinking…' : 'Ask carlo'}
 </button>
   <a
-    href="http://bookmycarpet.co.uk/contact/"
+    href="https://bookmycarpet.co.uk/contact/"
     target="_blank"
     rel="noopener noreferrer"
     className="w-full bg-pink-500 text-white py-2.5 rounded-xl hover:bg-pink-600 transition-all font-medium tracking-wide shadow-md hover:shadow-lg text-center"
